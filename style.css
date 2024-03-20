@@ -1,0 +1,21 @@
+h1 {
+  padding: 1rem 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1100px;
+  margin: auto;
+}
+
+.dialog {
+  width: 80vw;
+}
+
+.dialog img {
+  opacity: 0;
+}

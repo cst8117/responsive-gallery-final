@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Gallery</h1>
+  </header>
+  <main id="gallery" class="gallery">
+    <div class="image-container" data-hdimage="images/cat-1-4800.avif">
+      <img src="images/cat-1-4800.jpg" alt="A kitten in a tree">
+    </div>
+    <div class="image-container" data-hdimage="images/cat-2-4800.avif">
+      <img src="images/cat-2-4800.jpg" alt="A black kitten in the road">
+    </div>
+    <div class="image-container" data-hdimage="images/cat-3-4800.avif">
+      <img src="images/cat-3-4800.jpg" alt="A kitten looking up">
+    </div>
+  </main>
+
+  <dialog id="dialog" class="dialog"></dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
