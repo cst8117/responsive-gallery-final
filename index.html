@@ -11,18 +11,39 @@
     <h1>Responsive Gallery</h1>
   </header>
   <main id="gallery" class="gallery">
-    <div class="image-container" data-hdimage="images/cat-1-4800.avif">
-      <img src="images/cat-1-4800.jpg" alt="A kitten in a tree">
-    </div>
-    <div class="image-container" data-hdimage="images/cat-2-4800.avif">
-      <img src="images/cat-2-4800.jpg" alt="A black kitten in the road">
-    </div>
-    <div class="image-container" data-hdimage="images/cat-3-4800.avif">
-      <img src="images/cat-3-4800.jpg" alt="A kitten looking up">
-    </div>
+    <picture class="image-container" data-hdimage="images/cat-1-4800.avif">
+      <source srcset="
+        images/cat-1-600.avif 600w,
+        images/cat-1-1200.avif 1200w,
+        images/cat-1-2400.avif 2400w,  
+        images/cat-1-4800.avif 4800w"
+        sizes="(min-width: 947px) 33vw, (min-width: 632) 50vw">
+
+      <img src="images/cat-1-4800.jpg" alt="A random cat photo">
+    </picture>
+    <picture class="image-container" data-hdimage="images/cat-2-4800.avif">
+      <source srcset="
+        images/cat-2-600.avif 600w,
+        images/cat-2-1200.avif 1200w,
+        images/cat-2-2400.avif 2400w,  
+        images/cat-2-4800.avif 4800w"
+        sizes="(min-width: 947px) 33vw, (min-width: 632) 50vw">
+      <img src="images/cat-2-4800.jpg" alt="A random cat photo">
+    </picture>
+    <picture class="image-container" data-hdimage="images/cat-3-4800.avif">
+      <source srcset="
+        images/cat-3-600.avif 600w,
+        images/cat-3-1200.avif 1200w,
+        images/cat-3-2400.avif 2400w,  
+        images/cat-3-4800.avif 4800w"
+        sizes="(min-width: 947px) 33vw, (min-width: 632) 50vw">
+      <img src="images/cat-3-4800.jpg" alt="A random cat photo">
+    </picture>
   </main>
 
-  <dialog id="dialog" class="dialog"></dialog>
+  <dialog id="dialog" class="dialog">
+
+  </dialog>
 
   <script src="script.js"></script>
 </body>

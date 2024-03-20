@@ -19,3 +19,35 @@ h1 {
 .dialog img {
   opacity: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.dialog.open {
+  animation-name: open;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.dialog.open img {
+  opacity: 1;
+  transition: 0.5s 1s;
+}
+
+
+@keyframes open {
+  0% {
+    transform: scale(0.01, 0.01);
+  }
+
+  40%, 50% {
+    transform: scale(0.01, 1);
+  }
+
+  90%, 100% {
+    transform: scale(1, 1);
+  }
+}
